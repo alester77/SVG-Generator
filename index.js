@@ -13,7 +13,7 @@ const promptUser = () => {
     {
       type: 'input',
       name: 'textColor',
-      message: 'What color is the shape?',
+      message: 'What color is the shape? Keyword or hexidecimal value with an #.',
     },
     {
       type: 'list',
@@ -24,7 +24,7 @@ const promptUser = () => {
     {
       type: 'input',
       name: 'backgroundColor',
-      message: 'What color is the background? You can choose a color keyword or hexadecimal value.',
+      message: 'What color is the background? You can choose a color keyword or hexadecimal value with a #.',
     }
   ])
   .then((answers) => {

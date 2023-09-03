@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  },
+  "name": "svg-generator",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "devDependencies": {
+    "jest": "^29.6.4"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alester77/SVG-Generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alester77/SVG-Generator/issues"
+  },
+  "homepage": "https://github.com/alester77/SVG-Generator#readme"
+}

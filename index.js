@@ -65,7 +65,12 @@ const generateSVG = (answers) => {
 
 const writeToFile = (fileName, data) => {
   const svgString = generateSVG(data);
-  fs.writeFileSync(fileName, svgString);
+  try {
+    fs.writeFileSync(fileName, svgString);
+    console.log("Success! SVG generated.");
+  } catch (error) {
+    console.error("An error occurred while writing the SVG file.", error);
+  }
 };
 
 

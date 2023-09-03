@@ -1,0 +1,5 @@
+
+  <svg width="300" height="300" style="background-color:Blue">
+      <circle cx="100" cy="100" r="100" fill="Purple" />
+      <text x="150" y="150" dominant-baseline="middle" text-anchor="middle" fill="white">Joy</text>
+    </svg>

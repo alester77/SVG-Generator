@@ -15,14 +15,19 @@ const promptUser = () => {
       {
         type: "input",
         name: "textColor",
-        message:
-          "What color is the shape? Keyword or hexidecimal value with an #.",
+        message: "What color is the text? Keyword or hexidecimal value with an #.",
+          
       },
       {
         type: "list",
         name: "shape",
         message: "What shape would you like to use?",
         choices: ["Triangle", "Square", "Circle"],
+      },
+      {
+        type: "input",
+        name: "shapeColor", 
+        message: "What color is the shape? Keyword or hexidecimal value with an #.",
       },
       {
         type: "input",
@@ -57,7 +62,7 @@ const generateSVG = (answers) => {
       break;
   }
 
-  shape.setColor(answers.textColor);
+  shape.setColor(answers.shapeColor);
 
   const centerX = 150;
   const centerY = 100;
@@ -69,7 +74,7 @@ const generateSVG = (answers) => {
     }" />
     <g transform="translate(${centerX}, ${centerY})">
       ${shape.render()}
-      <text x="0" y="0" dominant-baseline="middle" text-anchor="middle" fill="white">${
+      <text x="0" y="0" dominant-baseline="middle" text-anchor="middle" fill="${answers.textColor}">${
         answers.text
       }</text>
     </g>

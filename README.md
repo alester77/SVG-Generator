@@ -13,7 +13,7 @@ To run my project, inquirer would need to be installed as well as jest to run th
 
 To use this SVG Logo generator you will run node index.js. Prompts will be provided and you will have to answer them completely to provide the information to create a a SVG Logo. You will choose text (up to 3 characters), text color, a shape, the shape color, and background color. Once completed you will get a message that says if the generation was successful or failed. Open the created file to see the text of the logo. Open with preview or Live Server to see it rendered. To run tests, run npm runt test in the console. 
 
-Youtube link to demonstration video: 
+Youtube link to demonstration video: https://youtu.be/MzFcQvR3YN8
 
 ![Logo Example](./assets/images/Screenshot%202023-09-04%20084743.png)
    

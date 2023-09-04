@@ -38,6 +38,7 @@ const promptUser = () => {
     ])
     .then((answers) => {
       if (answers.text.length > 3) {
+        //requires no more than 3 characters
         console.log("Please enter up to 3 characters.");
         return promptUser();
       } else {
@@ -49,6 +50,7 @@ const promptUser = () => {
 const generateSVG = (answers) => {
   let shape = "";
   switch (answers.shape) {
+    //get the chosen shape
     case "Triangle":
       shape = new Triangle();
       break;
@@ -63,10 +65,11 @@ const generateSVG = (answers) => {
   }
 
   shape.setColor(answers.shapeColor);
-
+//helps with centering the shape
   const centerX = 150;
   const centerY = 100;
 
+  //xmnls was missing from the svg tag which was why I couldn't open with live server. That fixes the issue.
   return `
   <svg xmlns="http://www.w3.org/2000/svg" width="300" height="200" viewBox="0 0 300 200">
     <rect x="0" y="0" width="300" height="200" fill="${
